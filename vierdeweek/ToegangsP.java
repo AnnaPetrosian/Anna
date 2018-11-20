@@ -1,5 +1,7 @@
-class Demo{
-	public class OefeningObjectReturn {
+package vierdeweek;
+/*
+ Demo{
+	public cclasslass OefeningObjectReturn {
 	    public static void main(String[] args) {
 	        System.out.println("Welkom");
 	        ToegangsPoort tp = new ToegangsPoort();
@@ -42,5 +44,13 @@ class Demo{
 	            return persoon.pasje;
 	        }
 	    }
+	
+	
+	    
 	}
+
+
+
 	© 2018 GitHub, Inc.
+
+*/
