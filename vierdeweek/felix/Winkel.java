@@ -9,10 +9,11 @@ public class Winkel {
 		persoon.geld = 100;
 	//	persoon.vorstellen();
 		Supermarkt sm = new Supermarkt();
-		sm.welkomHeten(persoon);
 		Maandje m = new Maandje();
 		persoon.maandje = m;
 		persoon.vorstellen();
+		sm.boodschap = new Boodschap(25, "Melk");
+		sm.welkomHeten(persoon);
 		
 	}
 
@@ -27,14 +28,22 @@ class Persoon{
 	}
 }
 class Supermarkt{
+	Boodschap boodschap;
 void welkomHeten(Persoon persoon){
 		System.out.println("Welkom  " + persoon.naam);
+		System.out.println("ik heb: " + boodschap.prijs);
+		
 	}
 }
 class Maandje{
-	Boodschap boodschap = new Boodschap();
+	Boodschap boodschap = new Boodschap(3,"jojo");
 }
 class Boodschap{
 	int prijs = 0;
 	String naamb= null;
+	Boodschap(int prijs, String naamb){
+		this.naamb = naamb;
+		this.prijs = prijs;
+	}
+	
 }
